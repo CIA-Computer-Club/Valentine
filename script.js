@@ -3,7 +3,7 @@ function yes(){
     document.getElementById("name").remove();
     document.getElementById("no-button").remove();
 
-    // Update text content, show message, and change image source to "dance.gif"
+    // Update text, show message, and change image source to happy
     const yesMessage = document.getElementById("question");
     yesMessage.textContent = "See you on the 14th bbg <3";
     yesMessage.style.display = "block";
@@ -24,7 +24,7 @@ function not(){
     // Set button position to absolute
     noButton.style.position = "absolute";
 
-    // Change image source to "gun.gif"
+    // Change image source to fun
     document.getElementsByClassName("image")[0].src = "images/burugun.png";
 
     // Generate random coordinates within the visible container
