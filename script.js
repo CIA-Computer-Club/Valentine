@@ -36,8 +36,3 @@ function not(){
     noButton.textContent = msg;
 
 }
-
-function egg(){
-    document.getElementById("container").remove();
-    document.body.style.background = "images/pusok.webp";
-}
