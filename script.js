@@ -1,3 +1,5 @@
+const arr = ["Please just for once", "I really love you please", "Accept me please", "I'll be the best date of your life", "I'll buy you all the food and chocolate in the world", "Please marry me", "I'll be your sugardaddy/sugarmommy", "I'll do all your schoolwork", "We can Netflix & chill", "We can eat ramen together"]
+
 function yes(){
     document.getElementById("name").remove();
     document.getElementById("no-button").remove();
@@ -13,8 +15,9 @@ function yes(){
 }
 
 function not(){
+    let msg = arr[(Math.floor(Math.random() * arr.length))]
+
     const noButton = document.getElementById("no-button");
-    const container = document.querySelector(".container");
     const maxWidth = window.innerWidth - noButton.offsetWidth;
     const maxHeight = window.innerHeight - noButton.offsetHeight;
 
@@ -30,6 +33,7 @@ function not(){
 
     document.getElementById("question").textContent = "ur not allowed to click this :3";
     document.getElementById("name").style.display = "none";
+    noButton.textContent = msg;
 
 }
 
